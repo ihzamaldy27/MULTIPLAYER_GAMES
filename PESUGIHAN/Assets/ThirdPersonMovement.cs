@@ -6,16 +6,20 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
     public Transform cam;
+    //public Animator anim;
 
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
-    private void Start()
+    void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        /*anim = GetComponent<Animator>();
+        Debug.Log(anim);*/
     }
 
     // Update is called once per frame
@@ -39,6 +43,14 @@ public class ThirdPersonMovement : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
+
+        /*if (Input.GetKey("w")) {
+            anim.SetBool("isRun", true);
+        }
+
+        if (!Input.GetKey("w"))
+        {
+        }*/
 
     }
 }
