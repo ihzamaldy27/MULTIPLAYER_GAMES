@@ -65,6 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AnimatiorController.cs" />
+    <Compile Include="Assets\Script\Inventory.cs" />
+    <Compile Include="Assets\Script\ItemData.cs" />
     <Compile Include="Assets\ThirdPersonMovement.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
