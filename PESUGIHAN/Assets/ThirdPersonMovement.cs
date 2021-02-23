@@ -7,7 +7,6 @@ public class ThirdPersonMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
     public Animator anim;
-    public Inventory inventory;
 
     public float speed = 6f;
 
@@ -79,19 +78,5 @@ public class ThirdPersonMovement : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
 
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Item") {
-            Debug.Log("Ini Item");
-
-            inventory.data_item[0] = other.GetComponent<ItemData>();
-            if (controller && Input.GetKeyDown(KeyCode.E))
-            {
-                inventory.showItem();
-            }
-
-        }
     }
 }

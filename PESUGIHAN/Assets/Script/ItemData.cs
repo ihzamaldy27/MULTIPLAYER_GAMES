@@ -4,17 +4,10 @@ using UnityEngine;
 
 public class ItemData : MonoBehaviour
 {
-    public string item1;
-    public Sprite sprite;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject ItemObject;
+    public Sprite icon;
+    public int ID;
+    public string nameItem;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public bool pickUp;
 }
