@@ -37,7 +37,7 @@ public class Inventory : MonoBehaviour
         if(other.tag == "Item")
         {
             Debug.Log("test");
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("item");
                 GameObject pickup = other.gameObject;
