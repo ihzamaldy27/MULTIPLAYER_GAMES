@@ -15,7 +15,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public float mSpeedY = 0;
     float mGravity = -9.81f;
-
+    int a = 0;
     void Start()
     {
         Cursor.visible = false;
@@ -28,6 +28,11 @@ public class ThirdPersonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*if (!isLocalPlayer)
+        {
+
+        }*/
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
@@ -74,9 +79,15 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
+            
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            
         }
-
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 }

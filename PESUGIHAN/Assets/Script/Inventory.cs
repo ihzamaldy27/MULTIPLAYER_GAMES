@@ -33,13 +33,13 @@ public class Inventory : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log(other);
+        //Debug.Log(other);
         if(other.tag == "Item")
         {
-            Debug.Log("test");
+            //Debug.Log("test");
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("item");
+                //Debug.Log("item");
                 GameObject pickup = other.gameObject;
                 ItemData data = pickup.GetComponent<ItemData>();
 
